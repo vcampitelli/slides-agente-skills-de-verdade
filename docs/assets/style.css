@@ -1,0 +1,87 @@
+:root {
+  /*--r-background-color: #1c1945;*/
+  /*--background-color-secondary: #2c2973;*/
+  --r-background-color: #0a4349;
+  --background-color-secondary: #08363a;
+
+  --r-main-font: Arimo, sans-serif;
+  --r-main-font-size: 24px;
+
+  --r-heading-font: var(--r-main-font);
+  --r-heading-text-transform: none;
+  --r-heading-font-weight: 700;
+
+  --r-link-color: #998fc7;
+  --r-link-color-dark: #6b648b;
+  --r-link-color-hover: #ada5d2;
+
+  --r-heading-letter-spacing: -0.08em;
+  --main-letter-spacing: -0.04em;
+}
+
+/* Tema */
+.reveal .slides {
+  text-align: left;
+  letter-spacing: var(--main-letter-spacing);
+}
+.reveal-viewport {
+  background-image: linear-gradient(135deg, var(--r-background-color), var(--background-color-secondary));
+}
+@keyframes fadeUp {
+  from { transform: translateY(12px); }
+  to { transform: translateY(0); }
+}
+.reveal .slides > section.present,
+.reveal .slides > section > section.present {
+  animation: fadeUp 0.5s ease both;
+  will-change: transform;
+}
+
+/* Tipografia */
+h1:not(.title, :last-child) {
+  --r-heading-margin: 0;
+  --r-heading1-size: 1em;
+  opacity: 0.5;
+}
+h1.title,
+h1:last-child,
+h1 + h2 {
+  /*border-bottom: 3px currentColor solid;*/
+}
+h1.title:before,
+h1:last-child:before,
+h1 + h2:before {
+  --width: 10px;
+  display: inline-block;
+  content: "";
+  width: var(--width);
+  margin-left: calc(var(--width) * -2);
+  height: 1em;
+  border-left: var(--width) currentColor solid;
+  transform: skew(-10deg);
+  transform-origin: 0 0;
+  vertical-align: text-top;
+}
+h1, h1 + h2 {
+  font-style: italic;
+}
+.reveal i:not(.ti), .reveal em {
+  font-style: italic;
+}
+
+/* Componentes */
+.reveal blockquote,
+.reveal pre {
+  width: 100%;
+  margin: 0;
+  padding: 0.8em;
+}
+
+/* Layouts */
+.d-flex {
+  display: flex;
+  column-gap: 1em;
+}
+.d-flex.cols-2 > div {
+  flex: 50% 0 1;
+}
