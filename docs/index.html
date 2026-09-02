@@ -10,8 +10,6 @@
         <link rel="stylesheet" href="reveal.js/dist/reveal.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
-              rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
               rel="stylesheet">
 
@@ -19,6 +17,7 @@
               href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons-300.min.css"
               integrity="sha512-URckUU7pMWD2eT8AnilN3Ef0igoYpSQGRS4+w2065umzQ7EbaVIAr5aX3jZ/XjxT9tg/jYqfsKnmM/lURNwMBw=="
               crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/tokyo-night-dark.css" integrity="sha512-+2gZRUBRo65MXQNdZ/cVX90M2iDKAyb/52muHcgh6F2iarNtc0aX1FE3kAxG9fJxzsgCtxjxZ6nWecrgMTVYnQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="assets/black.css">
         <link rel="stylesheet" href="assets/style.css">
         <link rel="icon" href="assets/favicon.png" type="image/png">
@@ -26,96 +25,93 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section id="first-slide">
-                    <div>
+                <section>
+                    <div id="first-slide">
+                        <header>
+                            <h1 class="title">
+                                Seu Agente<br>
+                                Precisa de<br>
+                                Skills <b>de Verdade</b>
+                            </h1>
+                            <h2>Vinícius Campitelli</h2>
+                        </header>
                         <i class="ti ti-sparkles"></i>
                     </div>
-                    <h1 class="title">
-                        Seu Agente Precisa de Skills de Verdade
-                    </h1>
-                    <h2>Vinícius Campitelli</h2>
                 </section>
 
                 <section> <!-- Sobre -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title"><i class="ti ti-user"></i> <span>Sobre</span></h1>
-                    </section>
-                    <section data-auto-animate>
-                        <h1 class="title"><i class="ti ti-user"></i> <span>Sobre</span></h1>
-                        <div id="about-me">
-                            <div class="text-center">
-                                <figure id="profile-pic">
-                                    <img src="assets/profile.jpg" alt="Vinícius Campitelli">
-                                    <figcaption>Vinícius<br>Campitelli</figcaption>
-                                </figure>
-                            </div>
-                            <ul>
-                                <li>
-                                    Bacharel em Ciência da Computação pela UFSCar
-                                </li>
-                                <li>Desenvolvedor há 20 anos</li>
-                                <li>
-                                    Membro do <a href="https://phpsp.org.br" target="_blank" rel="noopener">PHPSP</a>
-                                </li>
-                                <li>Entusiasta em cibersegurança</li>
-                                <li>Consultor de TI e instrutor de treinamentos</li>
-                            </ul>
+                    <h1 class="title"><i class="ti ti-user"></i> Sobre</h1>
+                    <div id="about-me" class="d-flex">
+                        <div class="text-center">
+                            <figure id="profile-pic">
+                                <img src="assets/profile.jpg" alt="Vinícius Campitelli">
+                                <figcaption>Vinícius<br>Campitelli</figcaption>
+                            </figure>
                         </div>
-                        <div>
-                            <div class="about-me-links">
-                                <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
-                                    <i class="ti ti-world-www"></i>
-                                    <span>Site <b>viniciuscampitelli.com</b></span>
-                                </a>
-                                <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
-                                    <i class="ti ti-brand-github"></i>
-                                    <span>GitHub <b>vcampitelli</b></span>
-                                </a>
-                                <a href="https://instagram.com/vcampitelli" target="_blank" rel="noopener">
-                                    <i class="ti ti-brand-instagram"></i>
-                                    <span>Instagram <b>vcampitelli</b></span>
-                                </a>
-                                <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
-                                    <i class="ti ti-brand-threads"></i>
-                                    <span>Threads <b>vcampitelli</b></span>
-                                </a>
-                                <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank" rel="noopener">
-                                    <i class="ti ti-brand-linkedin"></i>
-                                    <span>LinkedIn <b>Vinícius Campitelli</b></span>
-                                </a>
-                                <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
-                                    <i class="ti ti-brand-twitter"></i>
-                                    <span>X <b>vcampitelli</b></span>
-                                </a>
-                            </div>
+                        <ul>
+                            <li>
+                                Bacharel em Ciência da Computação pela UFSCar
+                            </li>
+                            <li>Desenvolvedor há 20 anos</li>
+                            <li>
+                                Membro do <a href="https://phpsp.org.br" target="_blank" rel="noopener">PHPSP</a>
+                            </li>
+                            <li>Entusiasta em cibersegurança</li>
+                            <li>Consultor de TI e instrutor de treinamentos</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="about-me-links">
+                            <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
+                                <i class="ti ti-world-www"></i>
+                                <span>viniciuscampitelli.com</span>
+                            </a>
+                            <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
+                                <i class="ti ti-brand-github"></i>
+                                <span>vcampitelli</span>
+                            </a>
+                            <a href="https://instagram.com/vcampitelli" target="_blank" rel="noopener">
+                                <i class="ti ti-brand-instagram"></i>
+                                <span>vcampitelli</span>
+                            </a>
+                            <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
+                                <i class="ti ti-brand-threads"></i>
+                                <span>vcampitelli</span>
+                            </a>
+                            <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank" rel="noopener">
+                                <i class="ti ti-brand-linkedin"></i>
+                                <span>Vinícius Campitelli</span>
+                            </a>
+                            <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
+                                <i class="ti ti-brand-x"></i>
+                                <span>vcampitelli</span>
+                            </a>
                         </div>
-                    </section>
-                    <section>
-                        <h2><i class="ti ti-presentation"></i> <span>Slides</span></h2>
-                        <div class="d-flex justify-start items-center">
-                            <div style="flex-shrink: 0">
-                                <a href="https://github.com/vcampitelli/workshop-mcp-laravel" target="_blank"
-                                   rel="noopener" class="d-block">
-                                    <img src="assets/qrcode-slides.png" alt="Workshops" class="my-0">
-                                </a>
-                            </div>
-                            <div class="qrcode-featured-text">
-                                Acesse os <i>slides</i> em<br>
-                                <a href="https://github.com/vcampitelli/workshop-mcp-laravel" target="_blank"
-                                   rel="noopener" class="d-block">
-                                    github.com/vcampitelli/workshop-mcp-laravel
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </section> <!-- Sobre -->
+
+                <section> <!-- Slides -->
+                    <h1 class="title"><i class="ti ti-presentation"></i> Slides</h1>
+                    <div class="d-flex justify-start items-center">
+                        <div style="flex-shrink: 0">
+                            <a href="https://github.com/vcampitelli/slides-agente-skills-de-verdade" target="_blank"
+                                rel="noopener" class="d-block">
+                                <img src="assets/qrcode-slides.png" alt="Slides" class="my-0">
+                            </a>
+                        </div>
+                        <div class="qrcode-featured-text">
+                            Acesse os <i>slides</i> em<br>
+                            <a href="https://github.com/vcampitelli/slides-agente-skills-de-verdade" target="_blank"
+                                rel="noopener" class="d-block">
+                                github.com/vcampitelli/slides-agente-skills-de-verdade
+                            </a>
+                        </div>
+                    </div>
+                </section> <!-- Slides -->
 
                 <section> <!-- O que são? -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">O que são Skills?</h1>
-                    </section>
-                    <section data-auto-animate>
-                        <h1 class="title">O que são Skills?</h1>
+                        <h1 class="title"><i class="ti ti-help-hexagon"></i> O que são Skills?</h1>
                         <p>
                             Skills são
                             <strong>instruções especializadas</strong> que ensinam uma IA a executar determinado tipo de
@@ -123,7 +119,7 @@
                         </p>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">O que são Skills?</h1>
+                        <h1 class="title"><i class="ti ti-help-hexagon"></i> O que são Skills?</h1>
                         <p>Elas podem combinar:</p>
                         <ul>
                             <li>Conhecimento</li>
@@ -138,77 +134,124 @@
                         </blockquote>
                     </section>
                     <section>
-                        <h1 class="title">Skills não são apenas prompts</h1>
-                        <p>Um prompt normalmente resolve uma tarefa específica.</p>
-                        <p>Uma Skill descreve <strong>como executar uma classe de tarefas</strong> de forma consistente.
+                        <h1>O que são Skills?</h1>
+                        <h2><i class="ti ti-help-hexagon"></i> Skills não são apenas prompts</h2>
+                        <p>Um prompt normalmente resolve uma tarefa específica</p>
+                        <p>
+                            Uma Skill descreve <strong>como executar uma classe de tarefas</strong> de forma consistente
                         </p>
                         <p><strong>Prompt</strong></p>
                         <blockquote>
-                            "Analise este relatório."
+                            "Analise este relatório"
                         </blockquote>
                         <p><strong>Skill</strong></p>
                         <blockquote>
-                            "Como analisar relatórios financeiros, quais indicadores observar, como estruturar a análise e quais regras seguir."
+                            "Como analisar relatórios financeiros, quais indicadores observar, como estruturar a análise e quais regras seguir"
                         </blockquote>
                     </section>
                     <section>
-                        <h1 class="title">Por que usar Skills?</h1>
-                        <p>Skills permitem transformar conhecimento humano em algo que a IA pode reutilizar.</p>
-                        <h3>Benefícios</h3>
-                        <ul>
-                            <li><i class="ti ti-recycle"></i> Reutilização</li>
-                            <li><i class="ti ti-target-arrow"></i> Consistência</li>
-                            <li><i class="ti ti-thinking-low"></i> Contexto especializado</li>
-                            <li><i class="ti ti-tools"></i> Processos padronizados</li>
-                            <li><i class="ti ti-chart-bar-popular"></i> Escalabilidade</li>
-                        </ul>
+                        <h1>O que são Skills?</h1>
+                        <h2><i class="ti ti-help-hexagon"></i> Por que usar?</h2>
+                        <p>Skills permitem transformar conhecimento humano em algo que a IA pode reutilizar</p>
+                        <div class="fragment">
+                            <h3>Benefícios</h3>
+                            <ul class="no-list">
+                                <li class="fragment"><i class="ti ti-recycle"></i> Reutilização</li>
+                                <li class="fragment"><i class="ti ti-target-arrow"></i> Consistência</li>
+                                <li class="fragment"><i class="ti ti-thinking-low"></i> Contexto especializado</li>
+                                <li class="fragment"><i class="ti ti-tools"></i> Processos padronizados</li>
+                                <li class="fragment"><i class="ti ti-chart-bar-popular"></i> Escalabilidade</li>
+                            </ul>
+                        </div>
                     </section>
                 </section> <!-- O que são? -->
 
                 <section> <!-- Sugestões de Skills -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1>Sugestões de Skills do Mercado</h1>
+                    <section>
+                        <h1><i class="ti ti-bulb"></i> Sugestões de Skills</h1>
                     </section>
-                    <section data-auto-animate>
-                        <h1>Sugestões de Skills do Mercado</h1>
-
+                    <section>
+                        <h1>Sugestões de Skills</h1>
+                        <h2>Find Skills</h2>
+                        <div>
+                            <a href="https://www.skills.sh/vercel-labs/skills/find-skills" target="_blank" rel="noopener">find-skills</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Sugestões de Skills</h1>
+                        <h2>Superpowers</h2>
+                        <div>
+                            <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Sugestões de Skills</h1>
+                        <h2>Caveman</h2>
+                        <div>
+                            <a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener">JuliusBrussee/caveman</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Sugestões de Skills</h1>
+                        <h2>Skills do Matt Pocock</h2>
+                        <div>
+                            Code Review
+                            Grill with Docs
+                            <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h1>Sugestões de Skills</h1>
+                        <h2>Anthropic Skills</h2>
+                        <div>
+                            Frontend Design
+                            <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
+                        </div>
                     </section>
                 </section> <!-- Sugestões de Skills -->
 
                 <section> <!-- Como criar -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Como criar Skills?</h1>
+                        <h1 class="title"><i class="ti ti-tool"></i> Como criar Skills?</h1>
                     </section>
                     <section data-auto-animate>
-                        <h1 class="title">Como criar Skills?</h1>
-                        <p>Uma Skill pode ser pensada como um pequeno <strong>manual operacional para a IA</strong>.</p>
+                        <h1 class="title"><i class="ti ti-tool"></i> Como criar Skills?</h1>
+                        <p>Uma Skill pode ser pensada como um pequeno <strong>manual operacional para a IA</strong></p>
                         <h3>Estrutura básica</h3>
-                        <pre><code class="language-text" data-trim>
-                            Skill
-                            ├── Objetivo
-                            ├── Quando usar
-                            ├── Instruções
-                            ├── Processo
-                            ├── Regras
-                            ├── Exemplos
-                            └── Recursos / ferramentas
+                        <pre><code class="yaml" data-trim>
+                            ---
+                            name: my-skill-name
+                            description: A clear description of what this skill does and when to use it
+                            ---
+
+                            # My Skill Name
+
+                            [Add your instructions here that Claude will follow when this skill is active]
+
+                            ## Examples
+                            - Example usage 1
+                            - Example usage 2
+
+                            ## Guidelines
+                            - Guideline 1
+                            - Guideline 2
                         </code></pre>
                     </section>
                     <section>
                         <h1>Como criar Skills?</h1>
-                        <h2>Passo 1: Defina o objetivo</h2>
+                        <h2><i class="ti ti-hexagon-number-1"></i> Defina o objetivo</h2>
                         <p>Comece respondendo:</p>
                         <blockquote>
                             <strong>"O que esta Skill deve ensinar a IA a fazer?"</strong>
                         </blockquote>
-                        <p>Evite objetivos genéricos.</p>
+                        <p>Evite objetivos genéricos</p>
                         <p>❌ "Ajudar com código"</p>
                         <p>✅ "Revisar Pull Requests seguindo nosso padrão de segurança e qualidade"</p>
                     </section>
                     <section>
                         <h1>Como criar Skills?</h1>
-                        <h2>Passo 2: Defina quando usar</h2>
-                        <p>A IA precisa saber <strong>quando a Skill é relevante</strong>.</p>
+                        <h2><i class="ti ti-hexagon-number-2"></i> Defina quando usar</h2>
+                        <p>A IA precisa saber <strong>quando a Skill é relevante</strong></p>
                         <p>Exemplos:</p>
                         <ul>
                             <li>Quando receber um Pull Request</li>
@@ -222,8 +265,8 @@
                     </section>
                     <section>
                         <h1>Como criar Skills?</h1>
-                        <h2>Passo 3: Escreva o processo</h2>
-                        <p>Transforme conhecimento implícito em passos explícitos.</p>
+                        <h2><i class="ti ti-hexagon-number-3"></i> Escreva o processo</h2>
+                        <p>Transforme conhecimento implícito em passos explícitos</p>
                         <pre><code class="language-text" data-trim>
                             1. Entender o contexto
                             2. Identificar os requisitos
@@ -231,24 +274,24 @@
                             4. Validar os resultados
                             5. Produzir a resposta no formato definido
                         </code></pre>
-                        <p>Quanto mais importante for a consistência, mais explícito deve ser o processo.</p>
+                        <p>Quanto mais importante for a consistência, mais explícito deve ser o processo</p>
                     </section>
                     <section>
                         <h1>Como criar Skills?</h1>
-                        <h2>Passo 4: Adicione regras</h2>
-                        <p>Regras reduzem ambiguidades.</p>
+                        <h2><i class="ti ti-hexagon-number-4"></i> Adicione regras</h2>
+                        <p>Regras reduzem ambiguidades</p>
                         <h3>Exemplo</h3>
                         <pre><code class="language-text" data-trim>
-                            - Nunca alterar código sem explicar o motivo.
-                            - Priorizar problemas de segurança.
-                            - Não assumir informações que não foram fornecidas.
-                            - Sinalizar incertezas explicitamente.
+                            - Nunca alterar código sem explicar o motivo
+                            - Priorizar problemas de segurança
+                            - Não assumir informações que não foram fornecidas
+                            - Sinalizar incertezas explicitamente
                         </code></pre>
                     </section>
                     <section>
                         <h1>Como criar Skills?</h1>
-                        <h2>Passo 5: Adicione exemplos</h2>
-                        <p>Exemplos mostram <strong>como aplicar as instruções na prática</strong>.</p>
+                        <h2><i class="ti ti-hexagon-number-5"></i> Adicione exemplos</h2>
+                        <p>Exemplos mostram <strong>como aplicar as instruções na prática</strong></p>
                         <pre><code class="language-text" data-trim>
                             Entrada → comportamento esperado → saída
                         </code></pre>
@@ -264,23 +307,23 @@
 
                 <section> <!-- Dicas na criação -->
                     <section>
-                        <h1>Dicas na criação de Skills</h1>
+                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>1. Seja específico</h2>
-                        <p>❌ "Faça uma análise completa."</p>
-                        <p>✅ "Verifique segurança, performance, legibilidade e cobertura de testes."</p>
+                        <h2><i class="ti ti-hexagon-number-1"></i> Seja específico</h2>
+                        <p>❌ "Faça uma análise completa"</p>
+                        <p>✅ "Verifique segurança, performance, legibilidade e cobertura de testes"</p>
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>2. Prefira regras acionáveis</h2>
-                        <p>❌ "Tenha cuidado com segurança."</p>
-                        <p>✅ "Procure exposição de credenciais, validação insuficiente de entrada e vulnerabilidades de autorização."</p>
+                        <h2><i class="ti ti-hexagon-number-2"></i> Prefira regras acionáveis</h2>
+                        <p>❌ "Tenha cuidado com segurança"</p>
+                        <p>✅ "Procure exposição de credenciais, validação insuficiente de entrada e vulnerabilidades de autorização"</p>
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>3. Não coloque tudo em uma Skill</h2>
+                        <h2><i class="ti ti-hexagon-number-3"></i> Não coloque tudo em uma Skill</h2>
                         <p>Skills muito grandes ficam difíceis de:</p>
                         <ul>
                             <li>Entender</li>
@@ -294,21 +337,21 @@
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>4. Escreva para a IA, não para humanos</h2>
-                        <p>Documentação humana pode explicar o <strong>porquê</strong>.</p>
-                        <p>Uma Skill precisa deixar claro também o <strong>como</strong>.</p>
+                        <h2><i class="ti ti-hexagon-number-4"></i> Escreva para a IA, não para humanos</h2>
+                        <p>Documentação humana pode explicar o <strong>porquê</strong></p>
+                        <p>Uma Skill precisa deixar claro também o <strong>como</strong></p>
                         <p>Em vez de:</p>
                         <blockquote>
-                            "Nosso código segue boas práticas de segurança."
+                            "Nosso código segue boas práticas de segurança"
                         </blockquote>
                         <p>Prefira:</p>
                         <blockquote>
-                            "Ao revisar autenticação, verifique validação de identidade, autorização e expiração de credenciais."
+                            "Ao revisar autenticação, verifique validação de identidade, autorização e expiração de credenciais"
                         </blockquote>
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>5. Pense em exceções</h2>
+                        <h2><i class="ti ti-hexagon-number-5"></i> Pense em exceções</h2>
                         <p>Uma Skill robusta também responde:</p>
                         <blockquote>
                             <strong>"E se algo der errado?"</strong>
@@ -324,9 +367,9 @@
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>6. Teste a Skill</h2>
-                        <p>Não basta escrever a Skill.</p>
-                        <p>Teste com diferentes entradas.</p>
+                        <h2><i class="ti ti-hexagon-number-6"></i> Teste a Skill</h2>
+                        <p>Não basta escrever a Skill</p>
+                        <p>Teste com diferentes entradas</p>
                         <h3>Pergunte:</h3>
                         <ul>
                             <li>A IA executou o processo esperado?</li>
@@ -336,55 +379,15 @@
                             <li>Funcionou em casos diferentes?</li>
                         </ul>
                         <blockquote>
-                            <strong>Skills também precisam de testes.</strong>
+                            <strong>Skills também precisam de testes</strong>
                         </blockquote>
                     </section>
                     <section>
-                        <h1>Dicas na criação de Skills</h1>
-                        <h2>Skill como código</h2>
-                        <p>Uma forma útil de pensar:</p>
-                        <pre><code class="language-text" data-trim>
-                            Skill
-                              ↓
-                            Especificação
-                              ↓
-                            Implementação
-                              ↓
-                            Teste
-                              ↓
-                            Iteração
-                        </code></pre>
-                        <p>A Skill não é um texto estático.</p>
-                        <p>Ela é uma <strong>peça de software aplicada ao comportamento da IA</strong>.</p>
+                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
+                        <h3>Uma boa Skill é específica, previsível e fácil de manter</h3>
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2>Checklist</h2>
-                        <p>Antes de publicar uma Skill:</p>
-                        <ul class="contains-task-list">
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Objetivo claro</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Quando usar definido</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Processo explícito</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Regras objetivas</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Exemplos relevantes</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Exceções consideradas</li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Formato de saída definido
-                            </li>
-                            <li class="task-list-item"><i class="ti ti-checkbox"></i> Testes realizados</li>
-                        </ul>
-                    </section>
-                </section> <!-- Dicas na criação -->
-
-                <section> <!-- Boas práticas -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title">Boas práticas</h1>
-                    </section>
-                    <section>
-                        <h1 class="title">Boas práticas</h1>
-                        <h3>Uma boa Skill é específica, previsível e fácil de manter.</h3>
-                    </section>
-                    <section>
-                        <h1>Boas práticas</h1>
                         <div class="d-flex cols-2">
                             <div>
                                 <h2><i class="ti ti-square-rounded-check"></i> Faça</h2>
@@ -413,7 +416,7 @@
                         </div>
                     </section>
                     <section>
-                        <h1 class="title">Boas práticas</h1>
+                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
                         <blockquote>
                             <strong>Regra de ouro:</strong><br>
                                 Se você não consegue explicar claramente o que a Skill faz,<br>
@@ -421,34 +424,70 @@
                                 provavelmente ela ainda precisa ser refinada
                         </blockquote>
                     </section>
-                </section> <!-- Boas práticas -->
-
-                <section> <!-- Conclusão -->
                     <section>
-                        <h1 class="title">Conclusão</h1>
-                        <h3>Skills transformam IA genérica em IA especializada.</h3>
-                        <p><strong>Boas Skills são:</strong></p>
-                        <ul>
-                            <li>Específicas</li>
-                            <li>Reutilizáveis</li>
-                            <li>Testáveis</li>
-                            <li>Comportamentalmente claras</li>
-                            <li>Fáceis de manter</li>
-                        </ul>
-                        <blockquote>
-                            <strong>Não pense apenas em "como escrever um bom prompt".</strong> <br>
-                            <strong>Pense em "como ensinar uma capacidade".</strong>
-                        </blockquote>
+                        <h1>Dicas na criação de Skills</h1>
+                        <h2><i class="ti ti-blocks"></i> Skill como código</h2>
+                        <p>Uma forma útil de pensar:</p>
+                        <pre><code class="language-text" data-trim>
+                            Skill
+                              ↓
+                            Especificação
+                              ↓
+                            Implementação
+                              ↓
+                            Teste
+                              ↓
+                            Iteração
+                        </code></pre>
+                        <p>A Skill não é um texto estático</p>
+                        <p>Ela é uma <strong>peça de software aplicada ao comportamento da IA</strong></p>
                     </section>
-                </section> <!-- Conclusão -->
+                    <section>
+                        <h1>Dicas na criação de Skills</h1>
+                        <h2><i class="ti ti-blocks"></i> Checklist</h2>
+                        <ul class="no-list">
+                            <li><i class="ti ti-square" style="--i: 0"></i> Objetivo claro</li>
+                            <li><i class="ti ti-square" style="--i: 1"></i> Quando usar bem definido</li>
+                            <li><i class="ti ti-square" style="--i: 2"></i> Processo explícito</li>
+                            <li><i class="ti ti-square" style="--i: 3"></i> Regras objetivas</li>
+                            <li><i class="ti ti-square" style="--i: 4"></i> Exemplos relevantes</li>
+                            <li><i class="ti ti-square" style="--i: 5"></i> Exceções consideradas</li>
+                            <li><i class="ti ti-square" style="--i: 6"></i> Formato de saída bem definido</li>
+                            <li><i class="ti ti-square" style="--i: 7"></i> Testes realizados</li>
+                        </ul>
+                    </section>
+                </section> <!-- Dicas na criação -->
 
                 <section> <!-- Referências -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1>Referências</h1>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>Referências</h1>
-
+                        <h1 class="title"><i class="ti ti-book"></i> Referências</h1>
+                        <ul>
+                            <li>
+                                <a href="https://agentskills.io/" target="_blank" rel="noopener">
+                                    agentskills.io
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://skills.sh/" target="_blank" rel="noopener">
+                                    skills.sh
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://developers.openai.com/api/docs/guides/tools-skills" target="_blank" rel="noopener">
+                                    Skills | OpenAI API
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://geminicli.com/docs/cli/skills/" target="_blank" rel="noopener">
+                                    Agent Skills | Gemini CLI
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://claude.com/skills" target="_blank" rel="noopener">
+                                    Skills | Claude by Anthropic
+                                </a>
+                            </li>
+                        </ul>
                     </section>
                 </section> <!-- Referências -->
 
@@ -472,31 +511,31 @@
                 </section> <!-- Treinamentos in company -->
 
                 <section> <!-- Obrigado -->
-                    <h1 class="text-center title"><i class="ti ti-heart-filled"></i> Obrigado!</h1>
+                    <h1 class="text-center title"><i class="ti ti-heart"></i> Obrigado!</h1>
                     <div class="about-me-links">
                         <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
                             <i class="ti ti-world-www"></i>
-                            <span>Site <b>viniciuscampitelli.com</b></span>
+                            <span>viniciuscampitelli.com</span>
                         </a>
                         <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
                             <i class="ti ti-brand-github"></i>
-                            <span>GitHub <b>vcampitelli</b></span>
+                            <span>vcampitelli</span>
                         </a>
                         <a href="https://instagram.com/vcampitelli" target="_blank" rel="noopener">
                             <i class="ti ti-brand-instagram"></i>
-                            <span>Instagram <b>vcampitelli</b></span>
+                            <span>vcampitelli</span>
                         </a>
                         <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
                             <i class="ti ti-brand-threads"></i>
-                            <span>Threads <b>vcampitelli</b></span>
+                            <span>vcampitelli</span>
                         </a>
                         <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank" rel="noopener">
                             <i class="ti ti-brand-linkedin"></i>
-                            <span>LinkedIn <b>Vinícius Campitelli</b></span>
+                            <span>Vinícius Campitelli</span>
                         </a>
                         <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-twitter"></i>
-                            <span>X <b>vcampitelli</b></span>
+                            <i class="ti ti-brand-x"></i>
+                            <span>vcampitelli</span>
                         </a>
                     </div>
                 </section> <!-- Obrigado -->
@@ -513,7 +552,6 @@
                 mouseWheel: false,
                 overview: false,
                 slideNumber: 'c/t',
-                transition: 'fade',
                 plugins: [RevealHighlight, RevealNotes],
             });
         </script>
