@@ -47,6 +47,7 @@ h2 > .ti {
   width: 100%;
   margin: 0;
   padding: 0.8em;
+  box-sizing: border-box;
 }
 ul.no-list {
   list-style-type: none;
@@ -63,12 +64,19 @@ ul.no-list {
 }
 
 /* Layouts */
+.d-block {
+  display: block;
+}
 .d-flex {
   display: flex;
   column-gap: 1em;
 }
 .d-flex.cols-2 > div {
   flex: 50% 0 1;
+}
+.my-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* First slide */
