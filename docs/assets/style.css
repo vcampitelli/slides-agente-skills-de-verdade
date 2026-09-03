@@ -6,7 +6,7 @@
   --r-main-font-size: 24px;
   --r-main-color: #ede7e3;
 
-  --r-heading-color: #01c194;
+  --r-heading-color: #FF9B85;
   --r-heading-font: var(--r-main-font);
   --r-heading-text-transform: none;
   --r-heading-font-weight: 700;
@@ -16,6 +16,7 @@
   --r-link-color-dark: #6b648b;
   --r-link-color-hover: #ada5d2;
 
+  --color-highlight: #7EBCE6;
   --r-heading-letter-spacing: -0.08em;
   --main-letter-spacing: -0.04em;
   --radius: 10px;
@@ -26,48 +27,67 @@
   text-align: left;
   letter-spacing: var(--main-letter-spacing);
 }
-.reveal .backgrounds {
-  --padding-x: 220px;
-  --padding-y: 25px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  background: var(--background-color-secondary);
-  top: var(--padding-y);
-  bottom: var(--padding-y);
-  left: var(--padding-x);
-  right: var(--padding-x);
-  width: calc(100% - 2 * var(--padding-x));
-  height: calc(100% - 2 * var(--padding-y));
+.reveal .slides {
+  --padding-x: 25px;
+  --padding-y: 20px;
+  max-height: 530px;
+  padding: var(--padding-y) var(--padding-x);
   border-radius: var(--radius);
+  background: var(--background-color-secondary);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
-.reveal .backgrounds:after {
+.reveal .slides:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 120px;
+  height: 95px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   background: rgba(0, 0, 0, 0.15);
 }
+.reveal .slides:before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 95px;
+  background: rgba(0, 0, 0, 0.15);
+  border-top-left-radius: var(--radius);
+}
+.reveal.first .slides:after,
+.reveal.first .slides:before {
+  top: auto;
+  bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: var(--radius);
+}
+.reveal.first .slides:after {
+  height: 60px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: var(--radius);
+}
+.reveal.first .slides:before {
+  width: 70px;
+  height: 60px;
+}
+.reveal .slides > section {
+  width: calc(100% - 50px);
+  height: calc(100% - 45px);
+}
 
 /* Tipografia */
 h1:not(.title, :last-child) {
-  --r-heading-margin: 0;
-  --r-heading1-size: 1em;
-  --r-heading-font-weight: 400;
-  opacity: 0.6;
+  display: none;
 }
 h1 > .ti,
 h2 > .ti {
+  margin-right: 25px;
   color: var(--r-main-color);
-  font-size: 2rem;
-}
-h1 > .ti {
-  margin-left: -58px;
-}
-h2 > .ti {
-  margin-left: -49px;
+  font-size: 2.7rem;
 }
 .reveal i:not(.ti),
 .reveal em {
@@ -75,23 +95,39 @@ h2 > .ti {
 }
 h1.title,
 h1 + h2 {
-  --r-heading-margin: 0 0 60px;
+  --r-heading-line-height: 58px;
+  --r-heading-margin: 0 0 32px;
 }
-section > a {
+h1 + h2 {
+  --r-heading-line-height: 66px;
+}
+p.fw-bold {
+  font-weight: 700;
+  color: var(--color-highlight);
+}
+li > .ti {
+  color: var(--color-highlight);
+}
+section > a,
+a.reference {
   font-size: 0.9em;
 }
-section > a:before {
-  content: "< ";
+section > a:before,
+a.reference:before {
+  opacity: 0.5;
+  content: "<";
 }
-section > a:after {
-  content: " >";
+section > a:after,
+a.reference:after {
+  opacity: 0.5;
+  content: ">";
 }
 
 /* Componentes */
 .reveal blockquote,
 .reveal pre {
   width: 100%;
-  margin: 0;
+  margin-left: auto;
   box-sizing: border-box;
 }
 .reveal pre {
@@ -110,10 +146,15 @@ ul.no-list {
   animation: checkbox 1s ease forwards;
   animation-delay: calc(var(--i) * 1s);
   animation-iteration-count: 1;
+  color: var(--r-main-color);
 }
 @keyframes checkbox {
   0%, 89%   { content: "\eb2c"; }
   90%, 100% { content: "\eb28"; color: aquamarine; }
+}
+img {
+  --r-block-margin: 10px;
+  border-radius: var(--radius);
 }
 
 /* Layouts */
@@ -141,21 +182,44 @@ ul.no-list {
   align-items: center;
   justify-content: space-between;
   text-align: left;
+  margin: 0 5px 0 15px;
 }
 #first-slide > header > h1 {
   --r-heading1-size: 3em;
   --r-heading-font-weight: 800;
+  --r-heading-line-height: 1.1;
 }
 #first-slide > header > h1 > b {
   font-weight: 900;
   color: #FF9B85;
+  text-decoration: underline;
+  text-decoration-thickness: 7px;
 }
-#first-slide > header > h2 {
-  --r-heading2-size: 1em;
+#author {
+  position: absolute;
+  bottom: 0.7em;
+  font-size: 1em;
   opacity: 0.7;
+}
+#author > i {
+  margin-right: 30px;
+}
+#author > span {
+  font-weight: 500;
+}
+.reveal:not(.first) > .slides > #author {
+  display: none;
 }
 
 /* About me */
+#profile-pic > figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+div + .about-me-links {
+  margin-top: 5px;
+}
 .about-me-links {
   display: flex;
   flex-wrap: wrap;
