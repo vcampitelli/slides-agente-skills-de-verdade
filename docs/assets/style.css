@@ -21,7 +21,7 @@
   --main-letter-spacing: -0.04em;
   --radius: 10px;
   --color-green: var(--r-background-color);
-  --color-red: #c19401;
+  --color-red: #f16401;
 }
 
 /* Tema */
@@ -113,15 +113,18 @@ h2 {
 h2 {
   --r-heading2-size: var(--r-heading1-size);
 }
-.fw-bold {
+.text-highlight {
   font-weight: 700;
   color: var(--color-highlight);
+}
+.fw-bold {
+  font-weight: 700;
 }
 .green {
   color: var(--color-green);
 }
 .red {
-  color: var(--color-red);
+  color: var(--color-red) !important;
 }
 li > .ti {
   color: var(--color-highlight);
@@ -151,6 +154,9 @@ a.reference:after {
 .reveal pre {
   font-size: 0.75em;
 }
+code.hljs.language-yaml {
+  white-space: pre-wrap;
+}
 .reveal blockquote,
 .reveal code.hljs {
   padding: 0.8em;
@@ -165,16 +171,6 @@ a.reference:after {
 ul.no-list {
   list-style-type: none;
 }
-.ti-square:before {
-  animation: checkbox 1s ease forwards;
-  animation-delay: calc(var(--i) * 4s);
-  animation-iteration-count: 1;
-  color: var(--r-main-color);
-}
-@keyframes checkbox {
-  0%, 89%   { content: "\eb2c"; }
-  90%, 100% { content: "\eb28"; color: aquamarine; }
-}
 img {
   --r-block-margin: 10px;
   border-radius: var(--radius);
@@ -187,6 +183,14 @@ code:not(.hljs) {
   padding: 5px 10px;
   font-size: 0.95em;
   color: var(--r-link-color-hover);
+}
+td {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.reveal .controls {
+  color: var(--r-main-color);
+  font-size: 8px;
 }
 
 /* Layouts */
@@ -238,7 +242,6 @@ code:not(.hljs) {
 }
 #first-slide > header > h1 > b {
   font-weight: 900;
-  color: #FF9B85;
   text-decoration: underline;
   text-decoration-thickness: 7px;
 }
