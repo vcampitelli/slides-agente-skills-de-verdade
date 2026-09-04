@@ -24,7 +24,7 @@
     <body>
         <div class="reveal first">
             <div class="slides">
-                <section class="center">
+                <section id="first-slide-section" class="center">
                     <div id="first-slide">
                         <header>
                             <h1 class="title">
@@ -39,7 +39,7 @@
                 <div id="author"><i class="ti ti-user"></i> <span>Vinícius Campitelli</span></div>
 
                 <section> <!-- Sobre -->
-                    <h1 class="title"><i class="ti ti-user-hexagon"></i> Sobre</h1>
+                    <h1 class="title"><i class="ti ti-user-hexagon"></i>Sobre</h1>
                     <div id="about-me" class="d-flex">
                         <div class="text-center">
                             <figure id="profile-pic">
@@ -61,34 +61,28 @@
                     </div>
                     <div class="about-me-links">
                         <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
-                            <i class="ti ti-world-www"></i>
-                            <span>viniciuscampitelli.com</span>
+                            <i class="ti ti-world-www"></i><span>viniciuscampitelli.com</span>
                         </a>
                         <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-github"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-github"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://instagram.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-instagram"></i>
-                            <span>vcampitelli</span>
-                        </a>
-                        <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-threads"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-instagram"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-linkedin"></i>
-                            <span>Vinícius Campitelli</span>
+                            <i class="ti ti-brand-linkedin"></i><span>Vinícius Campitelli</span>
+                        </a>
+                        <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
+                            <i class="ti ti-brand-threads"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-x"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-x"></i><span>vcampitelli</span>
                         </a>
                     </div>
                 </section> <!-- Sobre -->
 
                 <section> <!-- Slides -->
-                    <h1 class="title"><i class="ti ti-presentation"></i> Slides</h1>
+                    <h1 class="title"><i class="ti ti-presentation"></i>Slides</h1>
                     <div class="d-flex justify-start items-center">
                         <div style="flex-shrink: 0">
                             <a href="https://github.com/vcampitelli/slides-agente-skills-de-verdade" target="_blank"
@@ -108,7 +102,7 @@
 
                 <section> <!-- O que são? -->
                     <section data-auto-animate>
-                        <h1 class="title"><i class="ti ti-info-hexagon"></i> <span>Definição</span></h1>
+                        <h1 class="title"><i class="ti ti-info-hexagon"></i>Definição</h1>
                         <p>
                             Skills são
                             <b>instruções especializadas</b> que ensinam uma IA a executar determinado tipo de
@@ -130,17 +124,17 @@
                     </section>
                     <section>
                         <h1>O que são Skills?</h1>
-                        <h2><i class="ti ti-info-hexagon"></i> <span>Skills não são apenas prompts</span></h2>
+                        <h2><i class="ti ti-info-hexagon"></i>Skills não são apenas prompts</h2>
                         <div class="d-flex cols-2">
                             <div>
-                                <p class="fw-bold">Prompt:</p>
-                                <p>Resolve uma tarefa específica</p>
+                                <p class="fw-bold mt-0">Prompt:</p>
+                                <p>Resolve uma tarefa específica uma única vez</p>
                                 <blockquote>
                                     "Analise este relatório"
                                 </blockquote>
                             </div>
-                            <div>
-                                <p class="fw-bold">Skill:</p>
+                            <div class="fragment">
+                                <p class="fw-bold mt-0">Skill:</p>
                                 <p>
                                     Descreve <b>como executar uma classe de tarefas</b> de forma consistente
                                 </p>
@@ -152,11 +146,11 @@
                     </section>
                     <section>
                         <h1>O que são Skills?</h1>
-                        <h2><i class="ti ti-help-hexagon"></i> <span>Por que usar?</span></h2>
+                        <h2><i class="ti ti-help-hexagon"></i>Por que usar?</h2>
                         <p>Skills permitem transformar conhecimento humano em algo que a IA pode reutilizar</p>
                         <div class="fragment">
                             <p><b>Benefícios:</b></p>
-                            <ul class="no-list">
+                            <ul class="no-list ml-0">
                                 <li class="fragment"><i class="ti ti-recycle"></i> Reutilização</li>
                                 <li class="fragment"><i class="ti ti-target-arrow"></i> Consistência</li>
                                 <li class="fragment"><i class="ti ti-thinking-low"></i> Contexto especializado</li>
@@ -169,15 +163,17 @@
 
                 <section> <!-- Sugestões de Skills -->
                     <section>
-                        <h1 class="title"><i class="ti ti-bulb"></i> <span>Indicações</span></h1>
+                        <h1 class="title"><i class="ti ti-bulb"></i>Indicações</h1>
                         <p>
-                            Algumas <b>dicas</b> de skills que muitas pessoas tem utilizado
+                            Vamos ver algumas sugestões de skills populares do
+                            <a href="https://skills.sh" target="_blank" rel="noopener">skills.sh</a>:
                         </p>
-                        <!-- @TODO disclaimer -->
+                        <div>
+                            <img src="assets/skills-sh.jpg" alt="skills.sh" data-height="400">
+                        </div>
                     </section>
                     <section>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Find Skills</span></h2>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Find Skills</h2>
 
                         <p>Skill que te ajuda a... <b class="fragment">encontrar outras skills!</b></p>
                         <blockquote class="fragment">
@@ -196,30 +192,36 @@
                             </ul>
                         </blockquote>
 
-                        <a href="https://www.skills.sh/vercel-labs/skills/find-skills" target="_blank" rel="noopener">vercel-labs/skills</a>
+                        <a href="https://github.com/vercel-labs/skills/blob/main/skills/find-skills/SKILL.md"
+                            target="_blank" rel="noopener" class="reference fragment">vercel-labs/skills</a>
                     </section>
                     <section>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Superpowers</span></h2>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Superpowers</h2>
                         <div>
-                            <ul>
-                            <li><b>test-driven-development</b> - RED-GREEN-REFACTOR cycle (includes testing anti-patterns reference)</li>
-                            <li><b>verification-before-completion</b> - Ensure it's actually fixed</li>
-                            <li><b>brainstorming</b> - Socratic design refinement</li>
-                            <li><b>writing-plans</b> - Detailed implementation plans</li>
-                            <li><b>executing-plans</b> - Batch execution with checkpoints</li>
-                            <li><b>requesting-code-review</b> - Pre-review checklist</li>
-                            <li><b>receiving-code-review</b> - Responding to feedback</li>
-                            <li><b>using-git-worktrees</b> - Parallel development branches</li>
-                            <li><b>finishing-a-development-branch</b> - Merge/PR decision workflow</li>
-                            <li><b>subagent-driven-development</b> - Fast iteration with two-stage review (spec compliance, then code quality)</li>
+                            <p>Contém mais de 10 skills, entre elas:</p>
+                            <ul class="ul-spacing-md">
+                                <li>
+                                    <a href="https://github.com/obra/superpowers/tree/main/skills/test-driven-development"
+                                        target="_blank" rel="noopener"><b>test-driven-development</b></a>: ciclo
+                                    RED-GREEN-REFACTOR do TDD
+                                </li>
+                                <li>
+                                    <a href="https://github.com/obra/superpowers/tree/main/skills/brainstorming"
+                                        target="_blank" rel="noopener"><b>brainstorming</b></a>:
+                                    transforma ideias em especificações
+                                </li>
+                                <li>
+                                    <a href="https://github.com/obra/superpowers/tree/main/skills/requesting-code-review"
+                                        target="_blank" rel="noopener"><b>requesting-code-review</b></a>:
+                                    dispara um subagente para fazer <i>code review</i>
+                                </li>
                             </ul>
                         </div>
-                        <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener">obra/superpowers</a>
+                        <a href="https://github.com/obra/superpowers" target="_blank" rel="noopener"
+                            class="reference">obra/superpowers</a>
                     </section>
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Caveman</span></h2>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Caveman</h2>
                         <div class="d-flex">
                             <div style="flex-shrink: 1">
                                 <img alt="Kevin - The Office" class="my-0"
@@ -234,62 +236,76 @@
                         </div>
                     </section>
                     <section data-auto-animate>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Caveman</span></h2>
-                        <div class="d-flex cols-2">
+                        <h2><i class="ti ti-bulb"></i>Indicação: Caveman</h2>
+                        <div>
+                            <div><b>Agente normal: 69 tokens</b></div>
+                            <blockquote>
+                                The reason your React component is re-rendering is likely because you're creating a new object reference on each render cycle. When you pass an inline object as a prop, React's shallow comparison sees it as a different object every time, which triggers a re-render. I'd recommend using useMemo to memoize the object.
+                            </blockquote>
+                        </div>
+                        <div class="fragment">
+                            <div><b>Caveman: 19 tokens</b></div>
+                            <blockquote>
+                                New object ref each render. Inline object prop = new ref = re-render. Wrap in `useMemo`.
+                            </blockquote>
+                            <a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener" class="reference">JuliusBrussee/caveman</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Anthropic Skills</h2>
+                        <div>
+                            <p>Conjunto de skills da Anthropic, com destaque para:</p>
+                            <ul class="ul-spacing-md">
+                                <li>
+                                    <a href="https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md" target="_blank" rel="noopener"><b>frontend-design</b></a>: ajuda a criar ou melhorar interfaces através da definição da estética e tipografia, além de ajudar na tomada de decisões que evitam uma aparência padronizada ou genérica
+                                </li>
+                                <li>
+                                    <a href="https://github.com/anthropics/skills/blob/main/skills/canvas-design/SKILL.md" target="_blank" rel="noopener"><b>canvas-design</b></a>: cria imagens em arquivos <code>.png</code> e <code>.pdf</code> utilizando filosofias de <i>design</i>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener"
+                            class="reference">anthropics/skills</a>
+                    </section>
+                    <section>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Ponytail</h2>
+                        <div class="d-flex">
                             <div>
-                                <div><b>Agente normal: 69 tokens</b></div>
-                                <blockquote>
-                                    The reason your React component is re-rendering is likely because you're creating a new object reference on each render cycle. When you pass an inline object as a prop, React's shallow comparison sees it as a different object every time, which triggers a re-render. I'd recommend using useMemo to memoize the object.
-                                </blockquote>
+                                <img src="assets/ponytail.png" alt="Ponytail" data-width="600">
                             </div>
-                            <div class="fragment">
-                                <div><b>Caveman: 19 tokens</b></div>
-                                <blockquote>
-                                    New object ref each render. Inline object prop = new ref = re-render. Wrap in `useMemo`.
-                                </blockquote>
-                                <a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener" class="reference">JuliusBrussee/caveman</a>
+                            <div>
+                                <blockquote>Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.</blockquote>
+                                <a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener"
+                                   class="reference">DietrichGebert/ponytail</a>
                             </div>
                         </div>
                     </section>
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Skills do Matt Pocock</span></h2>
+                        <h2><i class="ti ti-bulb"></i>Indicação: Skills do Matt Pocock</h2>
                         <div>
-                            <p>Talvez o conjunto de skills mais famoso de atualidade, com destaque para:</p>
-                            <ul>
-                                <li><strong><a href="./skills/engineering/grill-with-docs/SKILL.md">grill-with-docs</a></strong>: Grilling session that also builds your project's domain model, sharpening terminology and updating <code>CONTEXT.md</code> and ADRs inline.</li>
-                                <li><strong><a href="./skills/engineering/improve-codebase-architecture/SKILL.md">improve-codebase-architecture</a></strong>: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.</li>
-                                <li><strong><a href="./skills/engineering/implement/SKILL.md">implement</a></strong>: Build the work described by a spec or set of tickets, driving <code>/tdd</code> at pre-agreed seams and closing out with <code>/code-review</code> before committing.</li>
-                                <li><strong><a href="./skills/productivity/teach/SKILL.md">teach</a></strong>: Teach the user a new skill or concept over multiple sessions, using the current directory as a stateful teaching workspace.</li>
+                            <p>Talvez o conjunto mais famoso da atualidade, com destaque para:</p>
+                            <ul class="ul-spacing-md">
+                                <li>
+                                    <b><a href="https://github.com/mattpocock/skills/blob/main/skills/engineering/grill-with-docs/SKILL.md">grill-with-docs</a></b>: sessão de análise crítica e aprofundamento para "estressar" o pensamento do usuário, atualizando <code>CONTEXT.md</code> e ADRs
+                                </li>
+                                <li>
+                                    <b><a href="https://github.com/mattpocock/skills/blob/main/skills/engineering/improve-codebase-architecture/SKILL.md">improve-codebase-architecture</a></b>: analisa o código em busca de oportunidades de "aprofundamento"
+                                </li>
+                                <li>
+                                    <b><a href="https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md">tdd</a></b>: também aplica o ciclo do TDD
+                                </li>
+                                <li>
+                                    <b><a href="https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md">teach</a></b>: ensina um conceito ao usuário, permitindo resumir e voltar em "missões"
+                                </li>
                             </ul>
                         </div>
                         <a href="https://github.com/mattpocock/skills" target="_blank" rel="noopener">mattpocock/skills</a>
                     </section>
-                    <section>
-                        <h1>Indicações</h1>
-                        <h2><i class="ti ti-bulb"></i> <span>Anthropic Skills</span></h2>
-                        <div>
-                            <p>Conjunto de skills da Anthropic, com destaque para:</p>
-                            <ul>
-                                <li>
-                                    <b>Frontend Design</b>: ...
-                                </li>
-                                <li>
-                                    <b>Canvas Design</b>: ...
-                                </li>
-                            </ul>
-                            <a href="https://github.com/anthropics/skills" target="_blank" rel="noopener">anthropics/skills</a>
-                        </div>
-                    </section>
-                    <!-- @TODO <section>
-                        https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md
-                    </section> -->
                 </section> <!-- Sugestões de Skills -->
 
                 <section> <!-- Como criar -->
                     <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title"><i class="ti ti-tool"></i> <span>Criação</span></h1>
+                        <h1 class="title"><i class="ti ti-tool"></i>Criação</h1>
                         <p>Crie um arquivo <code>YAML</code> com essa estrutura:</p>
                         <pre><code class="yaml" data-trim>
                             ---
@@ -312,7 +328,7 @@
                     </section>
                     <section>
                         <h1><span>Criação</span></h1>
-                        <h2><i class="ti ti-hexagon-number-1"></i> <span>Defina o objetivo</span></h2>
+                        <h2><i class="ti ti-hexagon-number-1"></i>Defina o objetivo</h2>
                         <p>Comece respondendo:</p>
                         <blockquote>
                             <b>"O que esta Skill deve ensinar a IA a fazer?"</b>
@@ -323,7 +339,7 @@
                     </section>
                     <section>
                         <h1><span>Criação</span></h1>
-                        <h2><i class="ti ti-hexagon-number-2"></i> <span>Defina quando usar</span></h2>
+                        <h2><i class="ti ti-hexagon-number-2"></i>Defina quando usar</h2>
                         <p>A IA precisa saber <b>quando a Skill é relevante</b></p>
                         <p>Exemplos:</p>
                         <ul>
@@ -338,7 +354,7 @@
                     </section>
                     <section>
                         <h1><span>Criação</span></h1>
-                        <h2><i class="ti ti-hexagon-number-3"></i> <span>Escreva o processo</span></h2>
+                        <h2><i class="ti ti-hexagon-number-3"></i>Escreva o processo</h2>
                         <p>Transforme conhecimento implícito em passos explícitos</p>
                         <pre><code class="language-text" data-trim>
                             1. Entender o contexto
@@ -351,10 +367,10 @@
                     </section>
                     <section>
                         <h1><span>Criação</span></h1>
-                        <h2><i class="ti ti-hexagon-number-4"></i> <span>Adicione regras</span></h2>
+                        <h2><i class="ti ti-hexagon-number-4"></i>Adicione regras</h2>
                         <p>Regras reduzem ambiguidades</p>
-                        <h3>Exemplo</h3>
-                        <pre><code class="language-text" data-trim>
+                        <p class="fw-bold">Exemplo:</p>
+                        <pre><code class="language-yaml" data-trim>
                             - Nunca alterar código sem explicar o motivo
                             - Priorizar problemas de segurança
                             - Não assumir informações que não foram fornecidas
@@ -363,7 +379,7 @@
                     </section>
                     <section>
                         <h1><span>Criação</span></h1>
-                        <h2><i class="ti ti-hexagon-number-5"></i> <span>Adicione exemplos</span></h2>
+                        <h2><i class="ti ti-hexagon-number-5"></i>Adicione exemplos</h2>
                         <p>Exemplos mostram <b>como aplicar as instruções na prática</b></p>
                         <pre><code class="language-text" data-trim>
                             Entrada → comportamento esperado → saída
@@ -376,54 +392,60 @@
                             <li>Exceções</li>
                         </ul>
                     </section>
+                    <section>
+                        <h1><span>Criação</span></h1>
+                        <h2><i class="ti ti-question"></i>Criador</h2>
+                        https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md
+                    </section>
                 </section> <!-- Como criar -->
 
                 <section> <!-- Dicas na criação -->
                     <section>
-                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
-                        <div class="fragment">
-                            <p class="fw-bold"><i class="ti ti-hexagon-number-1"></i> Seja específico</p>
-                            <p>❌ "Faça uma análise completa"</p>
-                            <p>✅ "Verifique segurança, performance, legibilidade e cobertura de testes"</p>
+                        <h1 class="title"><i class="ti ti-blocks"></i>Dicas na criação de Skills</h1>
+                        <div>
+                            <p class="fw-bold">
+                                <i class="ti ti-hexagon-number-1"></i> Seja específico
+                            </p>
+                            <blockquote>❌ Faça uma análise completa</blockquote>
+                            <blockquote>✅ Verifique segurança, performance, legibilidade e cobertura de testes</blockquote>
                         </div>
-                        <div class="fragment">
-                            <p class="fw-bold"><i class="ti ti-hexagon-number-2"></i> Prefira regras acionáveis</p>
-                            <p>❌ "Tenha cuidado com segurança"</p>
-                            <p>✅ "Procure exposição de credenciais, validação insuficiente de entrada e vulnerabilidades de autorização"</p>
+                        <div class="fragment mt-2">
+                            <p class="fw-bold">
+                                <i class="ti ti-hexagon-number-2"></i> Defina regras acionáveis
+                            </p>
+                            <blockquote>❌ Tenha cuidado com segurança</blockquote>
+                            <blockquote>✅ Procure exposição de credenciais, validação insuficiente de entrada e vulnerabilidades de autorização</blockquote>
                         </div>
                     </section>
                     <section>
-                        <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-hexagon-number-3"></i> Não coloque tudo em uma Skill</h2>
-                        <p>Skills muito grandes ficam difíceis de:</p>
-                        <ul>
-                            <li>Entender</li>
-                            <li>Manter</li>
-                            <li>Testar</li>
-                            <li>Reutilizar</li>
-                        </ul>
-                        <blockquote>
-                            <b>Uma Skill → uma responsabilidade principal</b>
-                        </blockquote>
+                        <h1 class="title"><i class="ti ti-blocks"></i>Dicas na criação de Skills</h1>
+                        <div>
+                            <div class="fw-bold">
+                                <i class="ti ti-hexagon-number-3"></i> Crie skills com uma única responsabilidade
+                            </div>
+                            <p class="mt-1">Skills muito grandes ficam difíceis de entender, manter e reutilizar</p>
+                        </div>
+
+                        <div class="fragment mt-3">
+                            <div class="fw-bold">
+                                <i class="ti ti-hexagon-number-4"></i> Escreva para a IA, não para humanos
+                            </div>
+                            <p class="mt-1">Documentação humana explica o <b>porquê</b>:</p>
+                            <blockquote>
+                                ❌ Nosso código segue boas práticas de segurança
+                            </blockquote>
+                            <p class="mt-0">Skills precisam deixar claro o <b>como</b>:</p>
+                            <blockquote>
+                                ✅ Verifique regras de permissionamento e expiração de credenciais
+                            </blockquote>
+                        </div>
                     </section>
                     <section>
-                        <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-hexagon-number-4"></i> Escreva para a IA, não para humanos</h2>
-                        <p>Documentação humana pode explicar o <b>porquê</b></p>
-                        <p>Uma Skill precisa deixar claro também o <b>como</b></p>
-                        <p>Em vez de:</p>
-                        <blockquote>
-                            "Nosso código segue boas práticas de segurança"
-                        </blockquote>
-                        <p>Prefira:</p>
-                        <blockquote>
-                            "Ao revisar autenticação, verifique validação de identidade, autorização e expiração de credenciais"
-                        </blockquote>
-                    </section>
-                    <section>
-                        <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-hexagon-number-5"></i> Pense em exceções</h2>
-                        <p>Uma Skill robusta também responde:</p>
+                        <h1 class="title"><i class="ti ti-blocks"></i>Dicas na criação de Skills</h1>
+                        <div class="fw-bold">
+                            <i class="ti ti-hexagon-number-5"></i> Pense em exceções
+                        </div>
+                        <p class="mt-1">Uma Skill robusta também responde:</p>
                         <blockquote>
                             <b>"E se algo der errado?"</b>
                         </blockquote>
@@ -437,28 +459,26 @@
                         </ul>
                     </section>
                     <section>
-                        <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-hexagon-number-6"></i> Teste a Skill</h2>
-                        <p>Não basta escrever a Skill</p>
-                        <p>Teste com diferentes entradas</p>
-                        <h3>Pergunte:</h3>
+                        <h1 class="title"><i class="ti ti-blocks"></i>Dicas na criação de Skills</h1>
+                        <div class="fw-bold">
+                            <i class="ti ti-hexagon-number-6"></i> Teste a Skill
+                        </div>
+                        <p class="mt-1">Não basta apenas escrever, é preciso testar com diferentes entradas</p>
+                        <p><b>Verifique se a IA...</b></p>
                         <ul>
-                            <li>A IA executou o processo esperado?</li>
-                            <li>Seguiu as regras?</li>
-                            <li>Inventou informações?</li>
-                            <li>Ignorou alguma instrução?</li>
-                            <li>Funcionou em casos diferentes?</li>
+                            <li>executou o processo esperado?</li>
+                            <li>seguiu as regras?</li>
+                            <li>inventou informações?</li>
+                            <li>ignorou alguma instrução?</li>
+                            <li>funcionou em casos diferentes?</li>
                         </ul>
-                        <blockquote>
-                            <b>Skills também precisam de testes</b>
-                        </blockquote>
                     </section>
                     <section>
-                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
+                        <h1 class="title"><i class="ti ti-blocks"></i>Dicas na criação de Skills</h1>
                         <p>Uma boa Skill é específica, previsível e fácil de manter</p>
                         <div class="d-flex cols-2">
                             <div>
-                                <p class=fw-bold><i class="ti ti-square-rounded-check"></i> Faça</p>
+                                <p class="fw-bold green"><i class="ti ti-square-rounded-check"></i> Faça</p>
                                 <ul>
                                     <li class="fragment">Defina <b>uma responsabilidade clara</b></li>
                                     <li class="fragment">Escreva instruções <b>objetivas e acionáveis</b></li>
@@ -470,7 +490,7 @@
                                 </ul>
                             </div>
                             <div class="fragment">
-                                <p class=fw-bold><i class="ti ti-square-rounded-x"></i>  Evite</p>
+                                <p class="fw-bold red"><i class="ti ti-square-rounded-x"></i>  Evite</p>
                                 <ul>
                                     <li class="fragment">Instruções genéricas como <em>"faça o seu melhor"</em></li>
                                     <li class="fragment">Skills que tentam resolver problemas demais</li>
@@ -484,17 +504,8 @@
                         </div>
                     </section>
                     <section>
-                        <h1 class="title"><i class="ti ti-blocks"></i> Dicas na criação de Skills</h1>
-                        <blockquote>
-                            <b>Regra de ouro:</b><br>
-                                Se você não consegue explicar claramente o que a Skill faz,<br>
-                                quando ela deve ser usada e como validar seu resultado,<br>
-                                provavelmente ela ainda precisa ser refinada
-                        </blockquote>
-                    </section>
-                    <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-blocks"></i> Skill como código</h2>
+                        <h2><i class="ti ti-blocks"></i>Skill como código</h2>
                         <p>Uma forma útil de pensar:</p>
                         <pre><code class="language-text" data-trim>
                             Skill
@@ -512,8 +523,8 @@
                     </section>
                     <section>
                         <h1>Dicas na criação de Skills</h1>
-                        <h2><i class="ti ti-blocks"></i> Checklist</h2>
-                        <ul class="no-list">
+                        <h2><i class="ti ti-blocks"></i>Checklist</h2>
+                        <ul class="no-list ml-0 ul-spacing-md">
                             <li><i class="ti ti-square" style="--i: 0"></i> Objetivo claro</li>
                             <li><i class="ti ti-square" style="--i: 1"></i> Quando usar bem definido</li>
                             <li><i class="ti ti-square" style="--i: 2"></i> Processo explícito</li>
@@ -528,11 +539,8 @@
                 </section> <!-- Dicas na criação -->
 
                 <section> <!-- Referências -->
-                    <section data-auto-animate data-auto-animate-restart>
-                        <h1 class="title"><i class="ti ti-book"></i> Referências</h1>
-                    </section>
-                    <section data-auto-animate>
-                        <h1 class="title"><i class="ti ti-book"></i> Referências</h1>
+                    <section>
+                        <h1 class="title"><i class="ti ti-book"></i>Referências</h1>
                         <ul>
                             <li>
                                 <a href="https://agentskills.io/" target="_blank" rel="noopener">
@@ -567,11 +575,11 @@
                 </section> <!-- Referências -->
 
                 <section> <!-- Treinamentos in company -->
-                    <h1 class="title"><i class="ti ti-chalkboard-teacher"></i> Treinamentos <i>in company</i></h1>
+                    <h1 class="title"><i class="ti ti-chalkboard-teacher"></i>Treinamentos <i>in company</i></h1>
                     <div class="d-flex items-center">
                         <div style="flex-shrink: 0">
                             <a href="https://bit.ly/vcampitelli" target="_blank" rel="noopener" class="d-block">
-                                <img src="assets/qrcode-workshops.png" alt="Workshops" class="my-0">
+                                <img src="assets/qrcode-workshops.png" alt="Workshops">
                             </a>
                         </div>
                         <div id="qrcode-workshops-text">
@@ -586,31 +594,25 @@
                 </section> <!-- Treinamentos in company -->
 
                 <section> <!-- Obrigado -->
-                    <h1 class="text-center title"><i class="ti ti-heart"></i> Obrigado!</h1>
-                    <div class="about-me-links">
+                    <h1 class="text-center title"><i class="ti ti-heart"></i>Obrigado!</h1>
+                    <div class="about-me-links mt-3">
                         <a href="https://viniciuscampitelli.com" target="_blank" rel="noopener">
-                            <i class="ti ti-world-www"></i>
-                            <span>viniciuscampitelli.com</span>
+                            <i class="ti ti-world-www"></i><span>viniciuscampitelli.com</span>
                         </a>
                         <a href="https://github.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-github"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-github"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://instagram.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-instagram"></i>
-                            <span>vcampitelli</span>
-                        </a>
-                        <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-threads"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-instagram"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://linkedin.com/in/viniciuscampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-linkedin"></i>
-                            <span>Vinícius Campitelli</span>
+                            <i class="ti ti-brand-linkedin"></i><span>Vinícius Campitelli</span>
+                        </a>
+                        <a href="https://www.threads.net/@vcampitelli" target="_blank" rel="noopener">
+                            <i class="ti ti-brand-threads"></i><span>vcampitelli</span>
                         </a>
                         <a href="https://twitter.com/vcampitelli" target="_blank" rel="noopener">
-                            <i class="ti ti-brand-x"></i>
-                            <span>vcampitelli</span>
+                            <i class="ti ti-brand-x"></i><span>vcampitelli</span>
                         </a>
                     </div>
                 </section> <!-- Obrigado -->
@@ -637,6 +639,12 @@
                 } else {
                     Reveal.getRevealElement().classList.add('first');
                 }
+            });
+            document.querySelectorAll('img[data-height]').forEach(($img) => {
+                $img.style.height = 'calc(' + $img.dataset.height + 'px / var(--slide-scale))';
+            });
+            document.querySelectorAll('img[data-width]').forEach(($img) => {
+                $img.style.width = 'calc(' + $img.dataset.width + 'px / var(--slide-scale))';
             });
         </script>
     </body>

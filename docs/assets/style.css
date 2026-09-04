@@ -10,7 +10,7 @@
   --r-heading-font: var(--r-main-font);
   --r-heading-text-transform: none;
   --r-heading-font-weight: 700;
-  --r-heading1-size: 2.1em;
+  --r-heading1-size: 1.5em;
 
   --r-link-color: #FFD97D;
   --r-link-color-dark: #6b648b;
@@ -20,6 +20,8 @@
   --r-heading-letter-spacing: -0.08em;
   --main-letter-spacing: -0.04em;
   --radius: 10px;
+  --color-green: var(--r-background-color);
+  --color-red: #c19401;
 }
 
 /* Tema */
@@ -42,7 +44,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 95px;
+  height: 90px;
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
   background: rgba(0, 0, 0, 0.15);
@@ -54,7 +56,7 @@
   top: 0;
   left: 0;
   width: 90px;
-  height: 95px;
+  height: 90px;
   background: rgba(0, 0, 0, 0.15);
   border-top-left-radius: var(--radius);
 }
@@ -78,6 +80,13 @@
   width: calc(100% - 50px);
   height: calc(100% - 45px);
 }
+.reveal .slide-number {
+  opacity: 0.6;
+  left: 8px;
+  right: auto;
+  bottom: 10px;
+  border-radius: calc(var(--radius) / 2);
+}
 
 /* Tipografia */
 h1:not(.title, :last-child) {
@@ -85,25 +94,34 @@ h1:not(.title, :last-child) {
 }
 h1 > .ti,
 h2 > .ti {
-  margin-right: 25px;
+  display: inline-block;
+  width: 1em;
+  margin-right: 45px;
   color: var(--r-main-color);
-  font-size: 2.7rem;
+  font-size: 2.5rem;
+  vertical-align: middle;
 }
 .reveal i:not(.ti),
 .reveal em {
   font-style: italic;
 }
 h1.title,
-h1 + h2 {
-  --r-heading-line-height: 58px;
-  --r-heading-margin: 0 0 32px;
+h2 {
+  --r-heading-line-height: 50px;
+  --r-heading-margin: 0 0 35px;
 }
-h1 + h2 {
-  --r-heading-line-height: 66px;
+h2 {
+  --r-heading2-size: var(--r-heading1-size);
 }
-p.fw-bold {
+.fw-bold {
   font-weight: 700;
   color: var(--color-highlight);
+}
+.green {
+  color: var(--color-green);
+}
+.red {
+  color: var(--color-red);
 }
 li > .ti {
   color: var(--color-highlight);
@@ -138,13 +156,18 @@ a.reference:after {
   padding: 0.8em;
   border-radius: var(--radius);
 }
+.reveal blockquote {
+  font-size: 0.9em;
+}
+.reveal ul {
+  margin-bottom: 15px;
+}
 ul.no-list {
   list-style-type: none;
-  margin-left: 0;
 }
 .ti-square:before {
   animation: checkbox 1s ease forwards;
-  animation-delay: calc(var(--i) * 1s);
+  animation-delay: calc(var(--i) * 4s);
   animation-iteration-count: 1;
   color: var(--r-main-color);
 }
@@ -155,6 +178,15 @@ ul.no-list {
 img {
   --r-block-margin: 10px;
   border-radius: var(--radius);
+}
+ul.ul-spacing-md > li + li {
+  margin-top: 0.5em;
+}
+code:not(.hljs) {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  font-size: 0.95em;
+  color: var(--r-link-color-hover);
 }
 
 /* Layouts */
@@ -171,12 +203,27 @@ img {
 .mt-0 {
   margin-top: 0 !important;
 }
+.mt-1 {
+  margin-top: 0.5em !important;
+}
+.mt-2 {
+  margin-top: 1em !important;
+}
+.mt-3 {
+  margin-top: 2em !important;
+}
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.ml-0 {
+  margin-left: 0 !important;
+}
 
 /* First slide */
+#first-slide-section {
+  height: 400px;
+}
 #first-slide {
   display: flex;
   align-items: center;
@@ -212,6 +259,9 @@ img {
 }
 
 /* About me */
+#profile-pic > img {
+  margin-bottom: 0;
+}
 #profile-pic > figcaption {
   font-weight: bold;
   text-align: center;
@@ -222,6 +272,7 @@ div + .about-me-links {
 }
 .about-me-links {
   display: flex;
+  align-items: start;
   flex-wrap: wrap;
   gap: 1em;
 }
@@ -236,4 +287,9 @@ div + .about-me-links {
 }
 .about-me-links > a > span {
   font-weight: 500;
+}
+.about-me-links > a > .ti {
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  line-height: 1.2;
 }
